@@ -400,6 +400,38 @@ main {
 .library-container .techniques {
 	width: 60%;
     margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 600px;
+    flex: 1;
+}
+
+.library-header, .move-header {
+    flex-shrink: 0; 
+}
+
+.move-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.move-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.move-list::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.move-list::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 4px;
+}
+
+.move-list::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
 }
 
 .library-container .info {
